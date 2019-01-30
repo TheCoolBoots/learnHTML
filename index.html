@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> The Cool Boots's first webpage </title>
+        <!--<style type = "text/css">
+            p{
+                color:red ;   applies style to all of given tags
+                font-family:ubuntu  
+            }
+        </style> -->
+        <link rel="stylesheet" type="text/css" href="main.css"  <!-- link to external stylesheet -->
+       
+    </head>
+    <body>
+        <h1> First Page </h1>
+        <a href="pages/2nd_page.html">This Links To The Second Page</a><br/> <!-- "a" header tag hyperlinked to given webpage -->
+        <a href="#Bot">To The Bottom</a>
+        
+        <p style="color:blue;font-family:helvetica">  <!-- inline styling has more weight than head style -->
+                    <!--property;value-->
+            Andrew Lai & Jacob Espling
+            2.1
+            Queues - all test methods added to queue and run one at a time
+            List - Could keep track of errors and error messages. For assertEquals, could store elements and iterate through them; find and mark differences.
+            Dictionaries - Could store data from the lines of the file(s)
+            2.2
+            The README file only gives a big picture view of coverage.py’s function. The “howitworks” file is more detailed and helpful. The majority of the project is source code. Test files easily make up a third of the source code, which makes sense considering the high number of variables and edge cases the program deals with. The structure of the source code is also difficult to decipher. What code runs when you call the program in the command line? In what order? We thought there would be relatively few steps (receive instructions, parse the test file, run the test file line by line, analyze the effects of each line, and then organize a report in the desired format), but the sheer volume of code suggests otherwise. One thing that was very clear was the care the developers took in commenting their code. Every file is thoroughly and thoughtfully documented for developers’ enjoyment. 
+            2.3
+            Data.py’s functions are thoroughly commented and the code itself is well formatted to the point where some comments can be rendered obsolete. Data.py maps line numbers and line jumps to files exclusively through python dictionaries with filenames as keys, and python lists or python lists of python lists as data. Comments indicate that the “jumps” are referred to in the program as “arcs,” and that it can either use just the dictionary of arcs or the dictionary of lines to develop an output, depending on what mode the code is run in. I would be happy to maintain and update this code if I at first had a rundown of the lines I did not understand due to my lack of experience; the code is clearer, better-formatted, and better commented than any code I have ever written.
+            Collector.py creates a collector object to store data from the trace(s) it begins. Each thread running gets its own trace object and creates more if necessary. A stack stores the active collector objects, whose status decides if new tracers for threads can be created and stored too. A list keeps track of active tracers. Depending on the status of threads, tracers can be appended to the list. A dictionary is used to reset collected data. The data isn’t lost, it migrates to CoverageData. The code itself was dense and not the easiest to understand. However, it was very actively commented which increased readability. Major functions had multiple sentence explanations, and each function’s duty was explained. The comments within my own code are sparse in comparison.
+            Results.py takes the formatted data from data.py and turns it into printable strings. Results.py also calculates the percentage of lines covered by testing. Similar to data.py, it uses python dictionaries to map lines to tuples containing data about those lines, and also has to parse the python dictionaries it receives from data.py. The comments were very helpful in deciphering the use of each method while also describing the format of the return statements, but could use a little more detail as to how the file integrates with the rest of the program. For example, I am pretty sure that results.py uses data from data.py but I couldn’t find a direct reference to data.py anywhere. That being said, I wouldn’t want to have to take care of this file but I would if I had to.
+            Summary.py is responsible for creating the summary report, which is what a casual user views after running coverage.py on their files. Summary.py opens an outfile, and within the reporterSummary class writes out a header, creates a list of lines, sorts them, and then if statements are deemed missing, the lines and ranges in question are written to outfile. Lists are used within “fr_analysis” to track missing lines and messages. Also, lists of lines (stored as string, and percentage pairs) are created by appending to list based on the contents of “fr_analysis.” Again the code is well commented, and each function has a stated purpose. However, there is much less detail than other files, but it is more simple. 
+        </p>
+        <p id="Bot"> 
+            I want to be found
+        </p>
+        
+        
+        <!-- file paths: "/" at the beginning means go to home directory. "../" means go back one folder -->
+       
+        
+    </body>
+</html>

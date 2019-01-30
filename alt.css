@@ -1,0 +1,42 @@
+div{
+    border: 3px solid red;
+    /* block level elements can have a width and height */
+}
+
+span{
+    border: 3px solid green;
+    /* inline elements can NOT have a width and height */
+    display: block; /*forces element to be a block*/
+}
+
+.green{  /* identifies a class called green */
+    color: green;
+}
+
+.blue{
+    color:blue;
+}
+
+#yellow{  /* identifies an ID called yellow. There should be only one instance of an ID */
+    color:yellow;
+}
+
+div p{
+    /*only style paragraphs inside a div*/
+}
+
+.green p{
+    /*only style paragraphs inside class green*/
+}
+
+p:hover{
+    color: red;
+    /* pseudoclass hover */
+}
+
+/* link pseudoclasses:
+    hover
+    active
+    visited
+    etc.
+*/

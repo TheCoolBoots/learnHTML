@@ -1,0 +1,23 @@
+p{
+    font-family: helvetica;
+    font-weight: normal;
+    font-size: 12px; /*supports cm, in, mm as well as px. "em" is relative size to m's size */
+    color: blue; /* can use hexadecimal or RGB color code or rgba (r,g,b,transparency%) */
+    
+    font:italic bold 13px helvetica; /* does the same thing as before; order matters when using this shortcut */
+
+    border: 4px solid green; /*border style shorthand; width, type, color*/
+    padding: 20 px; /*padding inside border*/
+    margin: 30 px; /*area around box*/
+    
+    background-color: white;
+
+}
+
+body{
+    background-image: url('images/asdf.jpg');
+    background-size: cover;
+    /* background: bg-color bg-image position.bg-size bg-repeat bg-attatchment<does background scroll with screen or not> */
+}
+
+/* this is an external style sheet that can be applied to all html files */
